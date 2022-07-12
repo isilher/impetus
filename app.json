@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "impetus",
-    "slug": "impetus",
+    "name": "impetusio",
+    "slug": "impetusio",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,13 +18,20 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.isilher.impetus",
+      "buildNumber": "2",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.isilher.impetus",
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"
