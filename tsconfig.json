@@ -1,6 +1,20 @@
 {
-  "extends": "expo/tsconfig.base",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Expo",
+
+  "extends": "eslint-config-toc/tsconfig.json",
+
   "compilerOptions": {
-    "strict": true
-  }
+    "allowJs": false,
+    "esModuleInterop": true,
+    "jsx": "react-native",
+    "lib": ["DOM", "ESNext"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "ESNext"
+  },
+
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
 }
