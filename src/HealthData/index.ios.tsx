@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { View, StyleSheet, Text, Alert } from "react-native";
+import { useEffect, useState } from 'react';
+import { View, StyleSheet, Text, Alert } from 'react-native';
 import AppleHealthKit, {
   HealthKitPermissions,
   HealthValue,
-} from "react-native-health";
+} from 'react-native-health';
 
 const permissions = {
   permissions: {
@@ -11,7 +11,15 @@ const permissions = {
   },
 } as HealthKitPermissions;
 
-export const HealthData: React.FC = () => {
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+
+export function HealthData() {
   const [stepCount, setStepCount] = useState(0);
 
   useEffect(() => {
@@ -19,7 +27,8 @@ export const HealthData: React.FC = () => {
       /* Called after we receive a response from the system */
 
       if (error) {
-        console.log("[ERROR] Cannot grant permissions!", error);
+        // eslint-disable-next-line no-console
+        console.log('[ERROR] Cannot grant permissions!', error);
         return;
       }
 
@@ -28,7 +37,6 @@ export const HealthData: React.FC = () => {
           Alert.alert(`Health kit error: ${err}`);
           return;
         }
-        console.log(results);
         setStepCount(results.value || 0);
       });
     });
@@ -39,12 +47,4 @@ export const HealthData: React.FC = () => {
       <Text>Steps today: {stepCount}</Text>
     </View>
   );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
+}

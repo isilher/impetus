@@ -4,7 +4,5 @@ require('eslint-config-toc/setupPlugins');
 
 module.exports = {
   // Add configs based on your needs
-  extends: [
-    'toc/react-native',
-  ]
-}
+  extends: ['toc/react-native'],
+};

@@ -1,10 +1,10 @@
 # Impetus
 
-The purpose of this example app is to research how hard it would be to implement Health Data functionality in an Expo managed workflow. 
+The purpose of this example app is to research how hard it would be to implement Health Data functionality in an Expo managed workflow.
 
 ## Challenge
 
-Most health data connections are not supported by Expo (exception: [Expo Pedometer](https://docs.expo.dev/versions/latest/sdk/pedometer/) allows fetching step count data). To access other data in a React Native project, one would usually implement third party libraries, for example [react-native-health](https://github.com/agencyenterprise/react-native-health) and [react-native-google-fit](https://github.com/StasDoskalenko/react-native-google-fit). These libraries however depend on native code/configuration changes and SDKs, which is historically not supported in an Expo managed workflow. 
+Most health data connections are not supported by Expo (exception: [Expo Pedometer](https://docs.expo.dev/versions/latest/sdk/pedometer/) allows fetching step count data). To access other data in a React Native project, one would usually implement third party libraries, for example [react-native-health](https://github.com/agencyenterprise/react-native-health) and [react-native-google-fit](https://github.com/StasDoskalenko/react-native-google-fit). These libraries however depend on native code/configuration changes and SDKs, which is historically not supported in an Expo managed workflow.
 
 ## Solution Directions
 
