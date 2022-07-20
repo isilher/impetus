@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { View, StyleSheet, Text, Alert } from 'react-native';
+import { Alert, StyleSheet, Text, View } from 'react-native';
 import AppleHealthKit, {
   HealthKitPermissions,
   HealthValue,

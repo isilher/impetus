@@ -1,20 +1,5 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Expo",
-
-  "extends": "eslint-config-toc/tsconfig.json",
-
-  "compilerOptions": {
-    "allowJs": false,
-    "esModuleInterop": true,
-    "jsx": "react-native",
-    "lib": ["DOM", "ESNext"],
-    "moduleResolution": "node",
-    "noEmit": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "target": "ESNext"
-  },
+  "extends": "eslint-config-toc/tsconfig-react-native.json",
 
   "include": ["src", "App.tsx"]
 }
